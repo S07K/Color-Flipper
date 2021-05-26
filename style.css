@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    transition: 0.3s ease;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(12,auto);
+    box-shadow: 0 0 10px #222222;
+}
+.nav-center{
+    grid-column: 3/11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-center h1{
+    color: teal;
+}
+.links{
+    width: 20%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.links a{
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+}
+.links a:hover{
+    color: teal;
+}
+.main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bgcolor{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    box-shadow: 0px 0px 16px #222222;
+}
+.detail{
+    width: 40%;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: cornsilk;
+    box-shadow: 0 0 10px #222222;
+}
+span{
+    color: teal;
+}
+button{
+    width: 10%;
+    background-color: transparent;
+    border: 3px solid #222222;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+button:hover{
+    background-color: #222222;
+    color: seashell;
+    cursor: pointer;
+    box-shadow: 0 0 10px #222222;
+}
+
+@media (max-width : 675px){
+    .detail{
+        width: 80%;
+        height: 10vh;
+        border-radius: 10px;
+        background-color: #222222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: cornsilk;
+        box-shadow: 0 0 10px #222222;
+    }
+    button{
+        width: 40%;
+        background-color: transparent;
+        border: 3px solid #222222;
+        padding: 5px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+    .nav-center{
+        flex-direction: column;
+    }
+    .links{
+        width: 100%;
+    }
+}
